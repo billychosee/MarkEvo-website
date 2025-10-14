@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <div className="min-h-screen overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[80vh] sm:min-h-[85vh] lg:min-h-screen flex items-center justify-center overflow-hidden">
         {/* Animated Background */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900"></div>
@@ -71,13 +71,13 @@ export default function Home() {
               Available for new projects
             </div>
 
-            <h1 className="text-6xl sm:text-8xl font-bold text-white mb-8 leading-tight">
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               Digital <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">Evolution</span>
               <br />
-              <span className="text-4xl sm:text-6xl font-light text-white/90">Made Simple</span>
+              <span className="text-2xl sm:text-4xl lg:text-5xl font-light text-white/90">Made Simple</span>
             </h1>
 
-            <p className="text-xl sm:text-2xl text-white/80 mb-12 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl lg:text-2xl text-white/80 mb-12 max-w-4xl mx-auto leading-relaxed">
               We craft extraordinary digital experiences that transform businesses and captivate audiences.
               From concept to launch, we bring your vision to life with cutting-edge technology.
             </p>

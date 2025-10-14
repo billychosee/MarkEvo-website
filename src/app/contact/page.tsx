@@ -76,7 +76,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
       {/* Hero Section */}
-      <section className="relative py-40 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <section className="relative py-24 sm:py-32 lg:py-40 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-blue-600/90 via-purple-600/90 to-indigo-600/90"></div>
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2072&q=80')] bg-cover bg-center opacity-30"></div>
@@ -85,10 +85,10 @@ export default function Contact() {
 
         <div className="relative z-10 max-w-6xl mx-auto text-center">
           <div className={`transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h1 className="text-6xl sm:text-7xl font-bold text-white mb-8 leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
               Let&apos;s <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-orange-300">Connect</span>
             </h1>
-            <p className="text-xl sm:text-2xl text-blue-100 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl lg:text-2xl text-blue-100 max-w-4xl mx-auto leading-relaxed">
               Ready to transform your business? Let&apos;s discuss how we can help you achieve your goals with our expert team.
             </p>
           </div>
