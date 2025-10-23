@@ -26,14 +26,14 @@ export default function About() {
   }, [isVisible]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-[#7AA6B3]/10">
       {/* Hero Section */}
-      <section className="relative py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-purple-600 overflow-hidden">
+      <section className="relative py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#EE6C29] to-[#7AA6B3] overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-20"></div>
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">About MarkEvo</h1>
-            <p className="text-lg sm:text-xl text-blue-100 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-[#7AA6B3] max-w-3xl mx-auto">
               Empowering businesses to thrive in the digital age through innovation, expertise, and unwavering commitment to excellence.
             </p>
           </div>
@@ -57,7 +57,7 @@ export default function About() {
               </p>
             </div>
             <div className="relative">
-              <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-300">
+              <div className="bg-gradient-to-br from-[#EE6C29]/20 to-[#7AA6B3]/20 rounded-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-300">
                 <Image
                   src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
                   alt="Team collaboration"
@@ -82,7 +82,7 @@ export default function About() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center p-6 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-gradient-to-r from-[#EE6C29] to-[#7AA6B3] rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
@@ -91,7 +91,7 @@ export default function About() {
               <p className="text-gray-600">We constantly push boundaries and embrace new technologies to deliver cutting-edge solutions.</p>
             </div>
             <div className="text-center p-6 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-gradient-to-r from-[#7AA6B3] to-[#EE6C29] rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
@@ -100,7 +100,7 @@ export default function About() {
               <p className="text-gray-600">We believe in the power of teamwork and partnership to achieve extraordinary results.</p>
             </div>
             <div className="text-center p-6 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-gradient-to-r from-[#EE6C29] to-[#7AA6B3] rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -109,7 +109,7 @@ export default function About() {
               <p className="text-gray-600">We strive for perfection in everything we do, delivering quality that exceeds expectations.</p>
             </div>
             <div className="text-center p-6 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="w-16 h-16 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-gradient-to-r from-[#7AA6B3] to-[#EE6C29] rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
@@ -122,7 +122,7 @@ export default function About() {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-blue-50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-[#7AA6B3]/10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
@@ -141,7 +141,7 @@ export default function About() {
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">John Smith</h3>
-                <p className="text-blue-600 mb-3">CEO & Founder</p>
+                <p className="text-[#EE6C29] mb-3">CEO & Founder</p>
                 <p className="text-gray-600">Visionary leader with 15+ years in digital transformation and strategic innovation.</p>
               </div>
             </div>
@@ -155,7 +155,7 @@ export default function About() {
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Sarah Johnson</h3>
-                <p className="text-blue-600 mb-3">CTO</p>
+                <p className="text-[#7AA6B3] mb-3">CTO</p>
                 <p className="text-gray-600">Technical expert specializing in scalable architectures and emerging technologies.</p>
               </div>
             </div>
@@ -169,7 +169,7 @@ export default function About() {
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Mike Chen</h3>
-                <p className="text-blue-600 mb-3">Head of Design</p>
+                <p className="text-[#EE6C29] mb-3">Head of Design</p>
                 <p className="text-gray-600">Creative director focused on user experience and innovative design solutions.</p>
               </div>
             </div>
@@ -181,8 +181,8 @@ export default function About() {
       <section className="relative py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-slate-900 to-slate-800 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-10"></div>
         <div className="absolute inset-0">
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-900/20 to-transparent"></div>
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-purple-900/30 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#EE6C29]/20 to-transparent"></div>
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-[#7AA6B3]/30 to-transparent rounded-full blur-3xl"></div>
         </div>
         <div className="relative max-w-7xl mx-auto">
           <div className="text-center mb-20">

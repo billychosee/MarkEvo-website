@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {
@@ -17,9 +18,9 @@ const Navbar = () => {
 
   const navItems = [
     { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
-    { href: '/services', label: 'Services' },
-    { href: '/contact', label: 'Contact' }
+    { href: '/hosting', label: 'Hosting' },
+    { href: '/media', label: 'Media' },
+    { href: '/about-us', label: 'About Us' }
   ];
 
   return (
@@ -34,12 +35,16 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link href="/" className="group">
               <div className="flex items-center space-x-2">
-                <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
-                  <span className="text-white font-bold text-lg">M</span>
-                </div>
-                <span className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent group-hover:from-blue-600 group-hover:to-purple-600 transition-all duration-300">
+                <Image
+                  src="/MarkEvo-logo-black-and-white.png"
+                  alt="MarkEvo Logo"
+                  width={100}
+                  height={100}
+                  className="transform group-hover:rotate-12 transition-transform duration-300"
+                />
+                {/* <span className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent group-hover:from-blue-600 group-hover:to-purple-600 ">
                   MarkEvo
-                </span>
+                </span> */}
               </div>
             </Link>
           </div>
@@ -50,19 +55,19 @@ const Navbar = () => {
               <Link
                 key={item.href}
                 href={item.href}
-                className="relative px-4 py-2 text-gray-700 hover:text-blue-600 font-medium transition-all duration-300 group rounded-lg hover:bg-blue-50/50"
+                className="relative px-4 py-2 text-gray-700 hover:text-[#EE6C29] font-medium transition-all duration-300 group rounded-lg hover:bg-[#EE6C29]/10"
               >
                 {item.label}
-                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 transition-all duration-300 group-hover:w-1/2 group-hover:left-1/4"></span>
-                <span className="absolute bottom-0 right-1/2 w-0 h-0.5 bg-gradient-to-l from-blue-600 to-purple-600 transition-all duration-300 group-hover:w-1/2 group-hover:right-1/4"></span>
+                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-[#EE6C29] to-[#7AA6B3] transition-all duration-300 group-hover:w-1/2 group-hover:left-1/4"></span>
+                <span className="absolute bottom-0 right-1/2 w-0 h-0.5 bg-gradient-to-l from-[#EE6C29] to-[#7AA6B3] transition-all duration-300 group-hover:w-1/2 group-hover:right-1/4"></span>
               </Link>
             ))}
           </div>
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center">
-            <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2.5 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 hover:from-blue-700 hover:to-purple-700">
-              Get Started
+            <button className="bg-[#7AA6B3] text-white px-6 py-2.5 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 hover:bg-[#688E99]">
+              Contact Us
             </button>
           </div>
 
@@ -70,7 +75,7 @@ const Navbar = () => {
           <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="relative w-10 h-10 flex items-center justify-center text-gray-700 hover:text-blue-600 focus:outline-none group"
+              className="relative w-10 h-10 flex items-center justify-center text-gray-700 hover:text-[#EE6C29] focus:outline-none group"
             >
               <div className="relative">
                 <span className={`block w-5 h-0.5 bg-current transition-all duration-300 ${
@@ -97,7 +102,7 @@ const Navbar = () => {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50/50 rounded-xl font-medium transition-all duration-300 transform hover:translate-x-2 ${
+                  className={`block px-4 py-3 text-gray-700 hover:text-[#EE6C29] hover:bg-[#EE6C29]/10 rounded-xl font-medium transition-all duration-300 transform hover:translate-x-2 ${
                     isMobileMenuOpen ? 'translate-x-0' : '-translate-x-4'
                   }`}
                   style={{ transitionDelay: `${index * 100}ms` }}
@@ -107,8 +112,8 @@ const Navbar = () => {
                 </Link>
               ))}
               <div className="pt-4 border-t border-gray-200/50">
-                <button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                  Get Started
+                <button className="w-full bg-[#7AA6B3] text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 hover:bg-[#688E99]">
+                  Contact Us
                 </button>
               </div>
             </div>
