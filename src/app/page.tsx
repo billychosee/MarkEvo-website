@@ -128,7 +128,7 @@ const HeroSection = () => (
           alt="Hero Banner"
           width={500}
           height={500}
-          className="w-full h-full object-cover rounded-3xl max-w-md lg:max-w-none shadow-xl"
+          className="w-full h-full object-cover max-w-md lg:max-w-none"
         />
       </div>
     </div>
