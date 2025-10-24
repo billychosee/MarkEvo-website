@@ -36,10 +36,10 @@ const Navbar = () => {
             <Link href="/" className="group">
               <div className="flex items-center space-x-2">
                 <Image
-                  src="/MarkEvo-logo-black-and-white.png"
+                  src="/MarkEvo-logo.png"
                   alt="MarkEvo Logo"
-                  width={100}
-                  height={100}
+                  width={120}
+                  height={120}
                   className="transform group-hover:rotate-12 transition-transform duration-300"
                 />
                 {/* <span className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent group-hover:from-blue-600 group-hover:to-purple-600 ">
